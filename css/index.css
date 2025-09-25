@@ -6,3 +6,13 @@
     text-align: center;
     font-size: 3.5em;
 }
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    270deg,
+    red, orange, yellow, green, blue, indigo, violet
+  );
+  background-size: 1400% 1400%;
+  animation: rainbow 20s ease infinite;
+}
