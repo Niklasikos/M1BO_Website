@@ -1,0 +1,25 @@
+.H1start
+{
+    font-family: Minecraft;
+    margin-top: 120px;
+    animation: fadeInUp 3s ease-in-out;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+body {
+  margin: 0;
+  background-color: #d4d2d2;
+}
+
+footer {
+    font-family: Minecraft;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

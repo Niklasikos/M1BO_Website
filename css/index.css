@@ -1,18 +1,44 @@
 .H1start
 {
-    font-family: Minecraft;
+    font-family: minecraft;
     margin-top: 120px;
     animation: fadeInUp 2s ease-in-out;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3.0em;
+}
+
+.NiklasImg
+{
+    animation: fadeInUp 3s ease-in-out;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(
-    270deg,
-    red, orange, yellow, green, blue, indigo, violet
-  );
-  background-size: 1400% 1400%;
-  animation: rainbow 20s ease infinite;
+  background-color: #d4d2d2;
+}
+
+.H2bottom
+{
+    font-family: Minecraft;
+    margin-top: 120px;
+    animation: fadeInUp 4s ease-in-out;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    font-size: 2.0em;
+}
+
+footer {
+    font-family: Minecraft;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }

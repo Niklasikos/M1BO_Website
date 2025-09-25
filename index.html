@@ -22,25 +22,17 @@
   </ul>
 </nav>
 
-<h1 class="H1start"style="text-align: center; margin-top: 120px; font-family: Minecraft;">Welkom op de homepage van Niklas</h1>
+<h1 class="H1start">Welkom op de homepage van Niklas</h1>
 
-<div style="height: 0px;"></div>
-<title>Niklas Nikolaidis</title>
-<img src="img/Niklas1.jpg" alt="Niklasjpg" style="max-width: 1000px; display: block; margin: 20px auto;">
+<img class="NiklasImg"  src="img/Niklas1.jpg" alt="Niklasjpg" style="max-width: 1000px; display: block; margin: 20px auto;">
 
-  <script>
-    const btn = document.getElementById('darkToggle');
-    const saved = localStorage.getItem('prefers-dark');
-    if (saved === 'true') {
-      document.body.classList.add('dark');
-      btn.setAttribute('aria-pressed', 'true');
-    }
-    btn.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      const pressed = document.body.classList.contains('dark');
-      btn.setAttribute('aria-pressed', pressed ? 'true' : 'false');
-      localStorage.setItem('prefers-dark', pressed ? 'true' : 'false');
-    });
-  </script>
+<h2 class="H2bottom">
+  Hallo en welkom op mijn website<br>
+  Wil je meer over mij weten?<br>
+  Dan klik op de <span style="font-family: Minecraft Bold;">Over mij</span><span style="font-family: Minecraft italic;"> of </span><span style="font-family: Minecraft Bold;">Projecten</span> tab
+</h2>
 
+<footer class="footer">
+  &copy; 2025 Niklas Nikolaidis. All rights reserved.
+</footer>
 </body>

@@ -13,8 +13,12 @@
     src: url(../Fonts/MinecraftBold.otf);
 }
 
-@font-face {
+@font-face { /* Minecraft italic bold font */
     font-family: "Minecraft Bold Italic";
     src: url(../Fonts/MinecraftBoldItalic.otf);
 }
 
+@font-face {
+    font-family: "Fancy";
+    src: url(../Fonts/Fancy.ttf);
+}
