@@ -7,9 +7,127 @@
     font-size: 2.5em;
 }
 
-body {
+h2 
+{
+margin-bottom: 20px;
+font-size: 3em;
+}
+
+
+body 
+{
   margin: 0;
   background-color: #d4d2d2;
+}
+
+.paragraph
+{
+    font-size: 1.5em;
+}
+
+section 
+{
+padding: 40px 100px;
+}
+
+
+.section
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 100px;
+margin-bottom: 50px;
+font-family: Minecraft;
+animation: fadeInUp 3s ease-in-out;
+}
+
+.section img
+{
+    display: block;
+    margin: 20px auto;
+    border-radius: 180px;
+    width: 350px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 1000px;
+}
+
+.section1
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 80px;
+margin-bottom: 50px;
+font-family: Minecraft;
+animation: fadeInUp 4s ease-in-out;
+}
+
+.section1 img
+{
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 650px;
+    height: 550px;
+    flex-shrink: 0;
+}
+
+.section2
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 80px;
+margin-bottom: 50px;
+font-family: Minecraft;
+animation: fadeInUp 6s ease-in-out;
+}
+
+.section2 img
+{
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 350px;
+    height: 252px;
+    flex-shrink: 0;
+}
+
+.section3
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 80px;
+margin-bottom: 50px;
+font-family: Minecraft;
+animation: fadeInUp 8s ease-in-out;
+}
+
+.section3 img
+{
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 392px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.top10
+{
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 50px;
+  font-family: Minecraft;
+  animation: fadeInUp 10s ease-in-out;
+}
+
+.top10text
+{
+    font-size: 1.5em;
 }
 
 footer {
