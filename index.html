@@ -24,7 +24,7 @@
 
 <h1 class="H1start">Welkom op de homepage van Niklas</h1>
 
-<img class="NiklasImg"  src="img/Niklas1.jpg" alt="Niklasjpg" style="max-width: 80%; display: block; margin: 20px auto;">
+<img class="NiklasImg"  src="img/niklasSanta.jpg" alt="Niklasjpg" style="max-width: 80%; display: block; margin: 20px auto;">
 
 <h2 class="H2bottom">
   Hallo en welkom op mijn website<br>
@@ -33,6 +33,32 @@
 </h2>
 
 <footer class="footer">
- No &copy;   2025 Niklas Nikolaidis. No rights reserved.(grap)
+ No &copy;   2025 Niklas Nikolaidis. No rights reserved.(grap)    ps: de script zou ook opslaan of je dark mode aan of uit hebt gezet
 </footer>
+
+<script>
+  const toggleBtn = document.getElementById("darkToggle");
+  const body = document.body;
+
+  if (localStorage.getItem("darkMode") === "enabled") {
+    body.classList.add("dark-mode");
+    toggleBtn.setAttribute("aria-pressed", "true");
+    toggleBtn.textContent = "Light mode";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    const darkModeActive = body.classList.toggle("dark-mode");
+
+    if (darkModeActive) {
+      localStorage.setItem("darkMode", "enabled");
+      toggleBtn.setAttribute("aria-pressed", "true");
+      toggleBtn.textContent = "Light mode";
+    } else {
+      localStorage.setItem("darkMode", "disabled");
+      toggleBtn.setAttribute("aria-pressed", "false");
+      toggleBtn.textContent = "Dark mode";
+    }
+  });
+</script>
+
 </body>

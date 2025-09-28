@@ -22,8 +22,64 @@
 
 <h1 class="H1start">Mijn Projecten</h1>
 
+
+  <section class="section">
+      <img src="img/Logo.jpeg" alt="Project 1">
+      <div class="project-content">
+        <h2>Multiplayer Platform Game </h2>
+        <p class="paragraph">Een multiplayergame die ik in Unity maak.
+           Het lijkt op Pico Park en Ultimate Chicken Horse, en ik wil het op Steam uitbrengen.
+            Het is momenteel nog in ontwikkeling.</p>
+      </div>
+  </section>
+
+  <section class="section1">
+      <img src="img/pi.jpg" alt="Project 2">
+      <div class="project-content">
+        <h2>Raspberry Pi Webserver</h2>
+        <p class="paragraph">Ik gebruik de Pi momenteel als thuisserver en webhost. Ik heb Apache erop geïnstalleerd en host er twee websites op: een voor mezelf <a href="https://kingseckgames.com">kingseck Games</a> die nog in ontwikkeling is, en één voor mijn moeder, die ik hier niet laat zien.</p>
+      </div>
+  </section>
+
+  <section class="section2">
+      <img src="img/arcadeproject.jpg" alt="Project 3">
+      <div class="project-content">
+        <h2>Elektronica Arcade</h2>
+        <p class="paragraph">Een groot elektronica-project met meer dan 40 componenten zoals een Pi5,
+        ESP32’s, OLED-schermen en motoren. Alles verwerkt in 3D-geprinte
+        behuizingen. Dit project ligt momenteel stil, maar ik was bezig met een arcadespel met minigames naast het grote scherm,
+        bijvoorbeeld een minigame op een klein scherm waarmee je verder kunt komen in het hoofdspel.</p>
+      </div>
+  </section>
+
 <footer class="footer">
- No &copy;   2025 Niklas Nikolaidis. No rights reserved.(grap)
+ No &copy;   2025 Niklas Nikolaidis. No rights reserved.(grap)    ps: de script zou ook opslaan of je dark mode aan of uit hebt gezet
 </footer>
+
+<script>
+  const toggleBtn = document.getElementById("darkToggle");
+  const body = document.body;
+
+  if (localStorage.getItem("darkMode") === "enabled") {
+    body.classList.add("dark-mode");
+    toggleBtn.setAttribute("aria-pressed", "true");
+    toggleBtn.textContent = "Light mode";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    const darkModeActive = body.classList.toggle("dark-mode");
+
+    if (darkModeActive) {
+      localStorage.setItem("darkMode", "enabled");
+      toggleBtn.setAttribute("aria-pressed", "true");
+      toggleBtn.textContent = "Light mode";
+    } else {
+      localStorage.setItem("darkMode", "disabled");
+      toggleBtn.setAttribute("aria-pressed", "false");
+      toggleBtn.textContent = "Dark mode";
+    }
+  });
+</script>
+
 
 </body>
